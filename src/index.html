@@ -37,7 +37,7 @@
             <div class="tree-type__item">
               <label class="tree-type__item-desc">
                 <input type="radio" checked class="tree-type__item-input visually-hidden" name="tree-type" value="Сосна">
-                <img class="tree-type__item-picture" src="img/win-material-1.png" alt="Материалл Сосна" >
+                <img class="tree-type__item-picture" src="img/win-material-1.png" alt="Материалл Сосна">
                 Сосна
             </label>
             </div>
@@ -70,7 +70,7 @@
           <ul class="additional">
             <li class="additional__item">
               <label class="additional__item-desc">
-                <input type="checkbox" class="additional__item-input" name="ad-elem" value="Отлив">
+                <input type="checkbox" checked class="additional__item-input" name="ad-elem" value="Отлив">
                 <span class="input-checked text-orange"></span>
                 Отлив
               </label>
@@ -117,21 +117,62 @@
           <p class="variables-title">Тип конструкции</p>
           <ul class="construct-type">
             <li class="construct-type__item">
-              <label class="construct-type__item-desc">
-                <input type="radio" class="construct-type__item-input">
+              <label class="construct-type__item-content">
+                <input type="radio" class="construct-type__item-input visually-hidden" value="Однокамерный" name="type-construct">
                 <span class="picture--checked">
-                  <svg width="24" hight="23">
-                    <use xlink:href="img/cheked.svg#ckecked"></use>
-                  </svg>
+                  <img src="img/cheked.png" alt="win-checked">
                 </span>
                 <img class="construct-type__item-img" src="img/win-var-1.png" alt="Однокамерный">
               </label>
             </li>
+            <li class="construct-type__item">
+              <label class="construct-type__item-content">
+                <input type="radio" checked class="construct-type__item-input visually-hidden" value="Двухкамерный" name="type-construct">
+                <span class="picture--checked">
+                  <img src="img/cheked.png" alt="win-checked">
+                </span>
+                <img class="construct-type__item-img" src="img/win-var-2.png" alt="Двукамерный">
+              </label>
+            </li>
+            <li class="construct-type__item">
+              <label class="construct-type__item-content">
+                <input type="radio" class="construct-type__item-input visually-hidden" value="Трехкамерный" name="type-construct">
+                <span class="picture--checked">
+                  <img src="img/cheked.png" alt="win-checked">
+                </span>
+                <img class="construct-type__item-img" src="img/win-var-3.png" alt="Трехкамерный">
+              </label>
+            </li>
+            <li class="construct-type__item">
+              <label class="construct-type__item-content">
+                <input type="radio" class="construct-type__item-input visually-hidden" value="Арочные" name="type-construct">
+                <span class="picture--checked">
+                  <img src="img/cheked.png" alt="win-checked">
+                </span>
+                <img class="construct-type__item-img" src="img/win-var-4.png" alt="Арочные">
+              </label>
+            </li>
           </ul>
+          <div class="window-size">
+            <img class="window-size__picture" src="img/window-size.png" alt="Окно для замера">
+            <div class="window-size__data size-hight">
+              <input type="text" max="999"name="hight" id="hight" class="window-size__data-value">
+              <label for="hight" class="window-size__data-desc">Высота</label>
+            </div>
+            <div class="window-size__data size-width">
+              <input type="text" max="999" name="width" id="width" class="window-size__data-value">
+              <label for="width" class="window-size__data-desc">Ширина</label>
+            </div>
+          </div>
+          <div class="window-price">
+            <h3 class="window-price__title">Стоимость окна</h3>
+            <span class="window-price__value">13 632 р.</span>
+            <p class="window-price__desc">Обращаем Ваше внимание, что данный расчет является приблизительным. Наш менеджер сообщит Вам точную стоимость после уточнения информации. Нажимая кнопку “Оформить заказ”, Вы принимаете <a href="#" class="window-price__">политику конфиденциальности</a> </p>
+          </div>
         </div>
       </form>
 
-      <form action="#" class="winfin__form">
+      <form action="#" class="winfin__call">
         <h3 class="winfin__form-caption">вызвать специалиста на замер</h3>
         
       </form>
