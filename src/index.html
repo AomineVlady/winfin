@@ -4,16 +4,138 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Питомник Мейн Кунов</title>
+    <title>Winfin</title>
 </head>
 <body>
-    <div class="header__content">
-      <span>Новосибирск</span>
-      <h1 class="header__title">Питомник Мейн-Кунов</h1>
-      <p class="header__lead">
-        <b>Первый питомник с расширенным спектром услуг</b>
-      </p>
-      <a href="#" class="header__btn">Смотреть котиков</a>
-    </div>
+  <div class="container">
+    <section class="winfin">
+      <form action="#" class="winfin__calculate">
+        <h2 class="winfin__calculate-caption">рассчитать стоимость</h2>
+        <div class="winfin__calculate-side">
+          <div class="variables">
+            <label for="window-materials" class="variables-title">Выберите тип окна</label>
+            <select name="windows-materials" id="window-materials" class="variables__list list-materials">
+              <option class="variables__list-item" value="деревянные">Деревянные</option>
+              <option class="variables__list-item" value="пластиковые">Пластиковые (ПВХ)</option>
+              <option class="variables__list-item" value="алюминиевые">Алюминиевые</option>
+              <option class="variables__list-item" value="металлопластиковые">Металлопластиковые</option>
+            </select>
+          </div>
+          <div class="variables">
+            <label for="windows-types-window" class="variables-title">Выберите тип окна</label>
+            <select name="windows-type" id="windows-types-window" class="variables__list list-window">
+              <option class="variables__list-item" value="Однокамерный + Стекло">Однокамерный + Стекло</option>
+              <option class="variables__list-item" value="Двукамерный + Стекло">Двукамерный + Стекло</option>
+              <option class="variables__list-item" value="Трехкамерный + Стекло">Трехкамерный + Стекло</option>
+              <option class="variables__list-item" value="Многокамерный">Многокамерный</option>
+            </select>
+          </div>
+
+          <p class="variables-title">Выберите тип дерева</p>
+
+          <div class="tree-type">
+            <div class="tree-type__item">
+              <label class="tree-type__item-desc">
+                <input type="radio" checked class="tree-type__item-input visually-hidden" name="tree-type" value="Сосна">
+                <img class="tree-type__item-picture" src="img/win-material-1.png" alt="Материалл Сосна" >
+                Сосна
+            </label>
+            </div>
+            <div class="tree-type__item">
+              <label class="tree-type__item-desc">
+                <input type="radio" class="tree-type__item-input visually-hidden" name="tree-type" value="Лиственница">
+                <img class="tree-type__item-picture" src="img/win-material-2.png" alt="Материалл Лиственница">
+                Лиственница
+            </label>
+            </div>
+            <div class="tree-type__item">
+              <label class="tree-type__item-desc">
+                <input type="radio" class="tree-type__item-input visually-hidden"
+                name="tree-type" value="Дуб">
+                <img class="tree-type__item-picture"  src="img/win-material-3.png" alt="Материалл Дуб">
+                Дуб
+            </label>
+            </div>
+            <div class="tree-type__item">
+              <label class="tree-type__item-desc">
+                <input type="radio" class="tree-type__item-input visually-hidden" name="tree-type" value="Меранти">
+                <img class="tree-type__item-picture" src="img/win-material-4.png" alt="Материалл Мерант и">
+                Меранти
+            </label>
+            </div>
+          </div>
+
+          <p class="variables-title text-orange">Дополнительные элементы</p>
+
+          <ul class="additional">
+            <li class="additional__item">
+              <label class="additional__item-desc">
+                <input type="checkbox" class="additional__item-input" name="ad-elem" value="Отлив">
+                <span class="input-checked text-orange"></span>
+                Отлив
+              </label>
+            </li>
+            <li class="additional__item">
+              <label class="additional__item-desc">
+                <input type="checkbox" class="additional__item-input" name="ad-elem" value="Откидной механизм">
+                <span class="input-checked text-orange"></span>
+                Откидной механизм
+              </label>
+            </li>
+            <li class="additional__item">
+              <label class="additional__item-desc">
+                <input type="checkbox" class="additional__item-input" name="ad-elem" value="Детский замок">
+                <span class="input-checked text-orange"></span>
+                Детский замок
+              </label>
+            </li>
+            <li class="additional__item">
+              <label class="additional__item-desc">
+                <input type="checkbox" class="additional__item-input" name="ad-elem" value="Подоконник/Порог">
+                <span class="input-checked text-orange"></span>
+                Подоконник/Порог
+              </label>
+            </li>
+            <li class="additional__item">
+              <label class="additional__item-desc">
+                <input type="checkbox" class="additional__item-input" name="ad-elem" value="Энергосберегающий">
+                <span class="input-checked text-orange"></span>
+                Энергосберегающий
+              </label>
+            </li>
+            <li class="additional__item">
+              <label class="additional__item-desc">
+                <input type="checkbox" class="additional__item-input" name="ad-elem" value="Монтаж">
+                <span class="input-checked text-orange"></span>
+                Монтаж
+              </label>
+            </li>
+          </ul>
+          <button class="winfin__calculate__button-submit" type="submit">оформить заказ</button>
+        </div>
+        <div class="winfin__calculate-side construct">
+          <p class="variables-title">Тип конструкции</p>
+          <ul class="construct-type">
+            <li class="construct-type__item">
+              <label class="construct-type__item-desc">
+                <input type="radio" class="construct-type__item-input">
+                <span class="picture--checked">
+                  <svg width="24" hight="23">
+                    <use xlink:href="img/cheked.svg#ckecked"></use>
+                  </svg>
+                </span>
+                <img class="construct-type__item-img" src="img/win-var-1.png" alt="Однокамерный">
+              </label>
+            </li>
+          </ul>
+        </div>
+      </form>
+
+      <form action="#" class="winfin__form">
+        <h3 class="winfin__form-caption">вызвать специалиста на замер</h3>
+        
+      </form>
+    </section>
+  </div>
 </body>
 </html>
