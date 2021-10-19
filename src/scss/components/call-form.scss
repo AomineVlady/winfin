@@ -1,15 +1,114 @@
-.winfin__form{
-    width: 30%;
+.winfin__call{
+    width: 35%;
     color:#fff;
     background-color: #64892e;
-    padding: 45px 5px 50px 5px;
+    padding: 45px 0px 50px 0px;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
 }
 
-.winfin__form-caption{
+.winfin__call-title{
     font-size: 24px;
     font-family: "Ubuntu";
     font-weight: 500;
-    margin: 0;
-    padding: 0;
+    padding:0 40px;
+    margin: 0 0 25px 0; 
     text-transform: uppercase;
+}
+
+.winfin__call__employee{
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-between;
+    padding: 0 5px 0 25px;
+}
+.winfin__call__employee-picture{
+    margin: 0 5px;
+}
+
+.winfin__call__employee-content{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
+    padding: 10px 0 0 0;
+}
+
+.winfin__call__employee-name{
+    font-size: 18px;
+    font-weight: 500;
+    margin: 5px 0;
+    padding: 0;
+}
+
+.winfin__call__employee-position{
+    font-size: 16px;
+    font-weight: 400;
+    padding: 0;
+    margin: 0;
+}
+
+.winfin__call__employee-desc{
+    font-size: 14px;
+    font-weight: 500;
+    padding: 0;
+    margin: 20px 0;
+}
+
+.winfin__call-decoration{
+    position: absolute;
+    bottom: -8px;
+    left: -25px;
+}
+
+.winfin__call__input-data{
+    padding: 0 25px 0 50px;
+}
+
+.winfin__call-desc{
+    font-size: 18px;
+    text-transform: uppercase;
+    line-height: 30px;
+    text-align: left;
+    font-weight: 500;
+    padding-right: 42%;
+    margin: 20px 0;
+    display: block;
+}
+
+.winfin__call__phone{
+    font-size: 14px;
+    color: rgba(0,0,0,.8);
+    padding:15px 10px;
+    width: 100%;
+    margin: 5px 0;
+}
+
+.winfin__call__comment{
+    font-size: 14px;
+    color: rgba(0,0,0,.8);
+    padding:15px 10px;
+    width: 100%;
+    height: 150px;
+    resize: none
+}
+
+.winfin__call__submit-button{
+    width: 100%;
+    background-color: $orange;
+    color:#fff;
+    font-size: 15px;
+    font-weight: 700;
+    margin: 10px 0;
+    padding: 15px 20px;
+    text-transform: uppercase;
+    border:1px solid $orange;
+    transition: all .3s ease;
+    &:hover{
+        color:$orange;
+        background-color: #fff;
+    }
 }
