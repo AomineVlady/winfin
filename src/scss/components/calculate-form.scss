@@ -89,24 +89,20 @@
     font-weight: 400;
     transition: all .3s ease;
     cursor: pointer;
-    user-select: none;
 }
 
 .tree-type__item-input + .tree-type__item-picture{
     cursor: pointer;
-    padding: 2px;
+    padding: 3px;
     border:1px solid transparent;
     border-radius: 100%;
     transition: all .3s ease;
 }
 
 .tree-type__item-input:checked + .tree-type__item-picture{    
-border:1px solid #668a30;
+    border:1px solid #668a30;
 }
-
-// .tree-type__item-input:checked + .tree-type__item-picture > .tree-type__item-desc{    
-//     color: royalblue;
-// }
+ 
 
 .text-orange{
     margin: 10px 0;
@@ -125,13 +121,46 @@ border:1px solid #668a30;
 }
 
 .additional__item{
-    margin-right: 20px;
+    margin-right: 22px;
     position: relative;
 }
+
+
+.hint{
+    display: none;
+    position: absolute;
+    right: -200px;
+    bottom: 100%;
+    background-color: #7c7c7b;
+    color: #fff;
+    padding: 5px;
+    width: 200px;
+    font-size: 12px;
+    border-radius: 5px;
+}
+
+.hint-button{
+    position: absolute;
+    right: -12px;
+    top: 8px;
+    font-size: 12px;
+    background-color: #7c7c7b;
+    color:#fff;
+    border-radius: 100%;
+    padding: 0 4px;
+    opacity: .5;
+    cursor: help;
+    &:hover .hint, &:hover{
+        display: block;
+        opacity: 1;
+    }
+}
+
 
 .additional__item-input{
     display: none;
 }
+
 .additional__item-desc{
     display: flex;
     align-items: center;
@@ -140,8 +169,10 @@ border:1px solid #668a30;
     font-family: "Ubuntu";
     font-weight: 400;
     font-size: 15px;
+    z-index: 9;
 }
-.input-checked{
+
+.additional__item-input--checked{
     display: inline-block;
     width: 25px;
     height: 25px;
@@ -149,16 +180,15 @@ border:1px solid #668a30;
     margin-right: 5px;
     position: relative;
     padding: 0 0 0 2px;
+    &::before{
+        content: '\1F5F8';
+        font-size: 25px;
+        position: absolute;
+        display: none;
+    }
 }
 
-.input-checked::before{
-    content: '\1F5F8';
-    font-size: 25px;
-    position: absolute;
-    display: none;
-}
-
-.additional__item-input:checked + .input-checked::before{
+.additional__item-input:checked + .additional__item-input--checked::before{
     display: block;
 }
 
